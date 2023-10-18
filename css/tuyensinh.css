@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    --color-hover: #ff6900;
+    --my-color: white;
+}
+/*  */
+
+.swapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    height: 61px;
+    
+}
+.logo{
+    padding-left: 30px;
+    z-index: 1;
+}
+.logo>a{
+    display: block;
+    height: fit-content;
+}
+.nav{
+    background-color: rgb(255, 255, 255);
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    /* background-color: aqua; */
+}
+nav>ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    cursor: pointer;
+}
+nav>ul a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: black;
+}
+nav>ul a:hover{
+    color: var(--color-hover);
+}
+.search{
+    position: relative;
+    padding: 20px;
+}
+
+.search>i{
+    font-size: 1.7rem;
+}
+.search-top{
+    position: absolute;
+    top: calc(100%);
+    right: 0;
+    width: 200px;
+    background-color: white;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    border-radius: 5px;
+    display: none;
+}
+.search-top>input{
+    /* font-size: 1.6rem; */
+    font-size: 1.6rem;
+    width: 85%;
+    outline: none;
+    border: none;
+}
+.search-top>i{
+    font-size: 1.6rem;
+}
+.search-top>i:hover{
+    color: var(--color-hover);
+}
+#search_check:checked ~ .search-top{
+    display: block;
+}
+
+.buttom_nav{
+    display: none;
+    margin-right: 30px;
+}
+.buttom_nav>i{
+    font-size: 3rem;
+}
+.buttom_nav>i:hover{
+    color: var(--color-hover);
+}
+
+@media screen and (max-width:1039px) {
+    .search-top{
+        right: 50px;
+        top: 20%;
+    }
+    .buttom_nav{
+        display: block;
+    }
+    nav{
+        position: relative;
+        /* background-color: aqua; */
+    }
+    nav>ul{
+        position: absolute;
+        flex-direction: column;
+        top: 30px;
+        right: -65px;
+        gap: 0;
+        width: 220px;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height .5s linear;
+    }
+    nav>ul>li{
+        border-bottom: 1px solid gray;
+        padding: 10px;
+        background-color: #272f54;
+    }
+    nav>ul>li:last-child{border: none;}
+    nav>ul>li>a{
+        color: var(--my-color);
+    }
+    #check_menu:checked ~ ul{
+        max-height: 500px;
+    }
+    #check_menu:checked ~ .overlay_menu{
+        display: block;
+    }
+    .overlay_menu{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:1147px) {
+   html{
+    font-size: 55%;
+   }
+}
+
