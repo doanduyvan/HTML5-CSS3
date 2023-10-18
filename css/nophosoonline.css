@@ -99,6 +99,7 @@ nav>ul a:hover{
 .buttom_nav>i:hover{
     color: var(--color-hover);
 }
+
 .banner{
     text-align: center;
 }
