@@ -14,9 +14,31 @@ document.addEventListener('scroll',()=>{
 
 
 
+// slick slider
+
 $(document).ready(function(){
-    // Đoạn mã JavaScript của bạn ở đây
-    const h2 = $('h2');
-   
-    console.log(h2);
+    $('.slider2').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      responsive: [
+    {
+      breakpoint: 590,
+      settings: {
+        slidesToShow: 2,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    }
+  
+  ]
+    });
 });
