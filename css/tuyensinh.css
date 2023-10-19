@@ -71,6 +71,7 @@ nav>ul a:hover{
     padding:10px;
     border-radius: 5px;
     display: none;
+    z-index: 2;
 }
 .search-top>input{
     /* font-size: 1.6rem; */
@@ -727,6 +728,7 @@ min-width: 248px;
         overflow: hidden;
         max-height: 0;
         transition: max-height .5s linear;
+        z-index: 2;
     }
     nav>ul>li{
         border-bottom: 1px solid gray;
