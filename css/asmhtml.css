@@ -514,6 +514,7 @@ header{
 
 footer{
     margin-bottom: 60px;
+    border-top: 5px solid orange;
 }
 .footer_top{
     width: 100%;

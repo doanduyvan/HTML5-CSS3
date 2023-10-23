@@ -663,7 +663,9 @@ border-radius: 5px;
 }
 
 /*  */
-
+footer{
+    margin-bottom: 60px;
+}
 .footer_top{
     width: 100%;
     background-color: #192041;
@@ -861,12 +863,124 @@ border-radius: 5px;
 
 
 
+/*  */
 
+.box_comment{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-top: 4rem;
+    margin-top: 4rem;
+    border-top: 1px solid #dadada;
+    margin-bottom: 5rem;
+}
+.div_comment{
+    display: flex;
+    gap: 5px;
+    align-items: start;
+}
 
+.avatar{
+    font-size: 3rem;
+    background-color: rgba(184, 184, 184,0.5);
+    padding: 5px 17px;
+    text-transform: uppercase;
+}
+.div_comment_khung{
+    background-color: #dadada;
+    flex: 1;
+    border: 1px solid rgb(189, 189, 189);
+}
+.div_comment_khung input{
+    width: 100%;
+    font-size: 2rem;
+    padding: 10px;
+    outline: none;
+    border: none;
+    padding-bottom: 30px;
+}
+.div_comment_khung>.button{
+    text-align: right;
+}
+.div_comment_khung button{
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    background-color: #0958b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
+.users_comment{
+    display: flex;
+    gap: 5px;
+    margin: 15px 0;
+    align-items: start;
+}
 
+.user_name{
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+    color: #0227cc;
+    text-transform: capitalize;
+}
 
+.user_comment{
+    font-size: 1.6rem;
+    
+}
 
+/*  */
+
+.overlay_login{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background-color: #20ccb2; */
+    z-index: 20;
+    display: grid;
+    place-items: center;
+    display: none;
+}
+
+.div_login{
+    max-width: 500px;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.div_login label{
+    font-size: 2rem;
+    color: white;
+}
+.div_login input{
+    font-size: 2rem;
+    padding: 5px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.div_login button{
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    background-color: #0958b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 
 
